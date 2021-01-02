@@ -44,16 +44,22 @@
         <div class="sidebar-container">
             <div class="sidebar-wrapper">
                 <div class="company">
-                    <i id="logo" class=""></i>
+                    <i id="logo" class="" style="display: none;"></i>
                     <i class="fas fa-bars"></i>
-                    <h4 id="companyDisplay">TIIDELab</h4>
+                    <h4 id="role_display" style="  
+                    color: #fff;
+                    font-size: 22px; 
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    font-family: 'Roboto', sans-serif ;
+                    padding: 25px 23px 0px 10px;">Not Logged IN</h4>
                 </div>
 
                 <div class="sidebar-links">
                     <!-- Link Start -->
                     <div class="dashboard-link" id="active_page">
                         <i class="fas fa-chart-pie"></i>
-                        <a href="">Dashboard</a>
+                        <a href="../contents/employee-dashboard.html">Dashboard</a>
                     </div>
                     <!-- New link -->
                     <div class="dashboard-link">
@@ -63,28 +69,28 @@
                     <!-- New link -->
                     <div class="dashboard-link">
                         <i class="fas fa-list-alt"></i>
-                        <a href="">Todo List</a>
+                        <a href="../contents/todo-list.html">Todo List</a>
                     </div>
                     <!-- New link -->
                     <div class="dashboard-link">
                         <i class="fas fa-calendar-alt"></i>
-                        <a href="">Calender</a>
+                        <a href="../contents/">Calender</a>
                     </div>
                     <!-- New link -->
                     <div class="dashboard-link">
                         <i class="fas fa-calendar-plus"></i>
-                        <a href="">e-Schedule</a>
+                        <a href="../contents/e-schedule.html">e-Schedule</a>
                     </div>
                     <!-- New link -->
                     <div class="dashboard-link">
                         <i class="fas fa-flag-checkered"></i>
-                        <a href="">Report</a>
+                        <a href="../contents/report_hour.html">Report</a>
                     </div>
 
                     <!-- New link -->
                     <div class="dashboard-link">
                         <i class="fas fa-bell"></i>
-                        <a href="">Requests</a>
+                        <a href="../contents/report.html">Requests</a>
                     </div>
                     <!-- New link -->
                     <div class="dashboard-link">
@@ -94,7 +100,7 @@
                     <!-- New link -->
                     <div class="dashboard-link">
                         <i class="fas fa-sign-out-alt"></i>
-                        <a href="/index.html" onclick="logOut()">Logout</a>
+                        <a href="#" onclick="logOut()">Logout</a>
                     </div>
                     <!-- End of Side-bar-Link -->
                 </div>
@@ -118,7 +124,7 @@
                             <a href="#"><i class="fa fa-bell fa-2x" aria-hidden="true"></i></a>
                             <a href="#"><i class="fa fa-cog fa-2x" aria-hidden="true"></i></a>
                             <div class="profile-in">
-                                <button> <img src="" alt=""> Akan Asanga</button>
+                                <button class="companyDisplay">iiiii</button>
                                 <div class="dropdown-in">
                                 </div>
                             </div>
@@ -163,14 +169,14 @@
                     <!-- calendar section-->
                     <div id="body-con-in">
                         <section id="section-one-in">
-                            <h3>Month view for <span id="dateHolder" /></h3>
+                            <h3>Month view for <span id="dateHolder"></span></h3>
                             <table id="calWrapper"></table>
                         </section>
                         <!-- list section todo-list -->
                         <section id="section-two">
                             <div class="cards-todo">
                                 <h3>Todo-List</h3>
-                                <button onclick="addTodoList()">Add</button>
+                                <button onclick="addTodoList()" class="addUp">Add</button>
                                 <div id="new-task">
                                     <!-- <input type="text" id="todo-list" placeholder="Todo-List" required /> -->
                                     <div id="todoTask"></div>
@@ -183,9 +189,16 @@
         </div>
     </div>
     </div>
+
     <script src="/assets/js/employee-dashboard.js"></script>
     <script src="/assets/js/internal-dashboard.js"></script>
-    <script src="/assets/js/employee-tasks.js"></script>
+    <!-- <script src="/assets/js/employee-tasks.js"></script> -->
+    <script src="../assets/js/timer.js"></script>
+    <script src="/assets/js/userAuth.js"></script>
+    <script src="/assets/js/userDetails.js"></script>
+    <script src="/assets/js/employee_details.js"></script>
+    <!-- For Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>

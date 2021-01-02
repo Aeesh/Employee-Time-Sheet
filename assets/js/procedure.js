@@ -15,7 +15,7 @@ let validateReg = () =>
 
   if (email.value == "" || password.value == "" || url.value == "" || name.value == "" || tel.value == "" || type.value == ""){
     
-    alert(`All Field are required
+    console.log(`All Field are required
     Email: ${email.value}
     Company URL: ${url.value}`)
   }
@@ -33,7 +33,7 @@ let validateReg = () =>
     else
     {
       // window.location.assign/href("online link.html", 500)
-      alert(`Redirecting ${email.value} to Dashboard: `)
+      // alert(`Redirecting ${email.value} to Dashboard: `)
       location.assign("../contents/confirmation.html", 500);
     }
   }

@@ -1,0 +1,68 @@
+/* css Reset */
+body{
+    box-sizing: border-box;
+    text-decoration: none;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.internal-con #billing-reports-con{
+    width: 95%;
+    margin: 70px auto;
+}
+
+.internal-con #billing-reports-con table{
+    width: 100%;
+}
+
+.internal-con #billing-reports-con tr{
+    background-color: rgb(219, 236, 241);
+    width: 100%;
+    padding: 17px 10px;
+    display: flex;
+    border-radius: 5px;
+    margin: 3px 0;
+}
+
+.internal-con #billing-reports-con thead tr th{
+    width: 14%;
+}
+
+.internal-con #billing-reports-con tr td{
+    text-align: center;
+    width: 14%;
+}
+
+.internal-con #month-section{
+    display: flex;
+    width: 25%;
+    margin: 30px auto;
+}
+
+.internal-con #month-section #showMonth{
+    width: 100%;
+    background-color: darkgray;
+    padding: 7px 9px;
+    cursor: pointer;
+}
+
+.internal-con #month-section #time-sheet-button{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 9px;
+    background-color: darkslateblue;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.internal-con #month-section #months .each-month{
+    display: none;
+    text-align: center;
+    cursor: pointer;
+}

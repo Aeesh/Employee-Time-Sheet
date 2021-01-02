@@ -1,0 +1,57 @@
+/* import google font - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+  margin:0;
+  padding:0;
+}
+*,
+*::before,
+*::after{
+  font-family: 'Roboto', sans-serif;
+}
+.card-deck{
+  flex-wrap:wrap;
+  margin:5px;
+}
+.head-text{
+  font-weight:600;
+  text-transform:uppercase;
+  font-size:26px;
+}
+.price{
+  font-weight:bolder;
+  font-size:32px;
+}
+.card-header{
+  background-color:transparent;
+}
+hr{
+  width:50px;
+  border:1px solid #fff;
+  box-shadow:3px 3px 8px #fff;
+}
+.duration{
+   font-size:24px;
+}
+.badge-primary{
+  font-size:18px;
+}
+
+.pricing-h,.pricing-f{
+  font-weight:bold;
+}
+.pricing-h span{
+  color:blue;
+}
+
+/* button */
+.btn-g{
+  border-radius:20px;
+  letter-spacing:2px;
+  font-weight:700;
+  padding:7px 17px;
+}
+
+footer{
+  margin-top:100px;
+}

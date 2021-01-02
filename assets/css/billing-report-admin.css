@@ -1,0 +1,95 @@
+/* css Reset */
+body{
+    box-sizing: border-box;
+    text-decoration: none;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.internal-con #co-admin{
+    width: 20%;
+    margin: 30px auto 5px;
+    text-align: center;
+}
+
+.internal-con #billing-reports-con-admin{
+    width: 95%;
+    background-color: #f2f2f2;
+    margin: 30px auto;
+}
+
+.internal-con #billing-reports-con-admin table{
+    width: 100%;
+}
+
+.internal-con #billing-reports-con-admin tr{
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 17px 10px;
+    display: flex;
+    border-radius: 5px;
+    margin: 3px 0;
+}
+
+.internal-con #billing-reports-con-admin thead tr th{
+    width: 14%;
+}
+
+.internal-con #billing-reports-con-admin tr td{
+    text-align: center;
+    width: 14%;
+}
+
+.internal-con #options{
+    display: flex;
+}
+
+.internal-con #department-section, .internal-con #month-section, #time-sheet-button{
+    width: 30%;
+    margin: 40px 35px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#time-sheet-button{
+    padding: 10px 7px;
+    width: auto;
+    margin-top: 53px;
+    background-color: lightseagreen;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.internal-con #department-section #showDepartment, .internal-con #month-section #showMonth{
+    background-color: darkgray;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.internal-con #department-section #departments, .internal-con #month-section #months{
+    width: 100%;
+}
+
+.internal-con #department-section .each-department, .internal-con #month-section #months .each-month{
+    width: 100%;
+    border: #f2f2f2 2px solid;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+.internal-con #department-section .each-department:hover, .internal-con #month-section #months .each-month:hover{
+    background-color: #f2f2f2;
+
+}

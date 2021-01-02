@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>view-profile Display</title>
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+    }
+
+    #view-container{
+      width: 700px;
+    }
+    #view-close{
+      font-size: 2rem;
+      display: block;
+      margin-left: 600px;
+      cursor: pointer;
+    }
+    view-header{
+      padding: 12px;
+      /* background: red; */
+      text-align: center;
+    }
+    .view-img{
+      width: 150px;
+      height: 150px;
+      background: #333;
+      display: block;
+      margin: auto;
+    }
+    view-header h3{
+      font-size: 3vw;
+      line-height: 70px;
+    }
+    view-header p{
+      font-size: 1.3rem;
+    }
+
+    view-main{
+      padding: 12px;
+    }
+
+    .view-profile{
+      display: flex;
+      padding: 12px;
+    }
+
+    .view-profile > section{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .view-profile .data{
+      font-size: 1.2rem;
+      position: relative;
+      left: 100px;
+    }
+
+    .view-profile .detail{
+      font-size: 1.2rem;
+      position: relative;
+      left: 220px;
+    }
+  </style>
+</head>
+<body>
+  <section id="view-container">
+    <span id="view-close"> &times;</span>
+    <view-header>
+      <img src="/assets/img/avatar.png" alt="" class="view-img">
+      <h3 id="name">Ayodele Samuel Adebayo</h3>
+      <p id="role">Full Stack Developer</p>
+    </view-header>
+    <view-main role="view-main">
+      <section class="view-profile">
+        <section class="data">
+          <span>Department</span>
+          <span>Role</span> 
+          <span>Salary</span> 
+          <span>Email</span> 
+          <span>Phone</span> 
+          <span>Resume</span> 
+          <span>Github</span> 
+          <span>Linked-In</span> 
+        </section>
+
+        <section class="detail">
+          <span id="department"> Web development </span>
+          <span id="role">Backend </span>
+          <span id="salary"># 12, 000 </span>
+          <span id="email"> unclebay@gmail.com </span>
+          <span id="tel"> 09088876665 </span>
+          <span><a href="#">https://sample.resume/unclebay143</a></span>
+          <span><a href="#">https://Github.com/unclebay143</a></span>
+          <span><a href="#">https://Github.com/unclebay143</a></span>
+        </section>
+      </section>
+    </view-main>
+  </section>
+</body>
+</html> 
+
